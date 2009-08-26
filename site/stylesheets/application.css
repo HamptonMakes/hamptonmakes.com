@@ -29,5 +29,31 @@ ul#biglinks {
 a, a:hover, a:visited {
   color: brown; }
 
+.clear {
+  clear: both; }
+
 img#me {
   float: right; }
+
+h2 {
+  text-align: center; }
+
+.books {
+  height: 130px;
+  margin-left: 35px; }
+  .books .book {
+    float: left;
+    height: 124px;
+    width: 84px; }
+    .books .book a {
+      float: left;
+      margin-top: 15px; }
+    .books .book h3 {
+      font-size: 10px;
+      text-align: center;
+      padding: 0px;
+      margin: 0px; }
+  .books .book.highlight {
+    border: 1px solid black; }
+    .books .book.highlight a {
+      margin-top: 0px; }
