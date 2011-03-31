@@ -1,0 +1,45 @@
+!!!
+%html
+  %head
+    %title Hampton Catlin | Ruby, Haml, Wikipedia, iPhone Development
+    <link href="http://blog.hamptoncatlin.com/feed/atom.xml" rel="alternate" type="application/atom+xml" />
+    <link rel="stylesheet" type="text/css" href="/application.css" />
+  %body
+    #wrapper
+      #content
+        #header
+          %img#me{:src => "/images/me.jpg"}
+
+          %h1 Hampton Catlin
+
+          %ul#biglinks
+            %li= link_to "About", "/"
+            %li= link_to "Blog", "/posts"
+            %li= link_to "Email", "mailto:contact@hamptoncatlin.com"
+            %li= link_to "Twitter", "http://www.twitter.com/hcatlin"
+
+          %p
+            Hampton Catlin is the Project Lead of the Wikimedia Foundation's Mobile Project heading development of their 
+            %a{:href => "http://wikitech.wikimedia.org/view/Mobile"} mobile platform. 
+            He is also the creator of several successful iPhone applications.
+
+          %p
+            He is also the inventor of the 
+            %a{:href => "http://haml-lang.com"} Haml markup language 
+            and 
+            %a{:href => "http://sass-lang.com"} Sass, a CSS generating language.
+        = yield
+      #footer
+        Everything copyright Hampton Catlin for every year ever. Licenses vary. Usually MIT.
+        %br/ 
+        Page created with 
+        %a{:href => "http://staticmatic.rubyforge.org/"} Staticmatic
+    <script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-121285-11");
+    pageTracker._trackPageview();
+    } catch(err) {}</script>

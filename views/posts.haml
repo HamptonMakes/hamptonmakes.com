@@ -1,0 +1,4 @@
+%h1 Blog Posts
+
+-  @posts.each do |post|
+  = haml(:_post, :locals => {:post => post})

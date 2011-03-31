@@ -1,10 +1,9 @@
 require "rubygems"
-require 'rack/contrib'
-require 'rack-rewrite'
 
-use Rack::Static, :urls => ['/images', '/stylesheets'], :root => "site"
-use Rack::ETag
-use Rack::Rewrite do
-  rewrite '/', '/index.html'
-end
-run Rack::Directory.new('site')
+require 'bundler'
+Bundler.setup
+Bundler.require
+
+require 'site'
+
+run Site

@@ -1,0 +1,5 @@
+%div[post]
+  .title
+    .date= date post.created_at
+    = link_to post[:title], "/posts/" + post.permalink
+    
