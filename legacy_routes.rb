@@ -4,7 +4,7 @@ module LegacyRoutes
     klass.get("/", :host => old_host) do 
       redirect "http://www.hamptoncatlin.com/posts"
     end
-    klass.get("/feed/atom.xml") do
+    klass.get("/feed/atom.xml", :host => old_host) do
       redirect "http://www.hamptoncatlin.com/feed/atom.xml"
     end
     klass.get("*", :host => old_host) do

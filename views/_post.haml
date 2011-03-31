@@ -1,5 +1,6 @@
 %div[post]
   .title
     .date= date post.created_at
+    - if post.user_id != 1
+      %em by *#{post.author_name}*
     = link_to post[:title], "/posts/" + post.permalink
-    
