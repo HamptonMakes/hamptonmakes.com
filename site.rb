@@ -1,5 +1,5 @@
 
-DB = Sequel.connect("mysql://root@localhost/blog")
+DB = Sequel.connect(ENV["DATABASE_URL"] || "mysql://root@localhost/blog")
 
 require 'models/post'
 require 'models/comment'
