@@ -73,4 +73,9 @@ class Site < Sinatra::Base
       end
     end
   end
+  
+  get '*' do
+    permalink = request.path.split("/").last
+    redirect "http://www.hamptoncatlin.com/posts/#{permalink}"
+  end
 end
