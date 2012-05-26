@@ -1,5 +1,5 @@
 
-DB = Sequel.connect(ENV["DATABASE_URL"] || "mysql://root@localhost/blog")
+DB = Sequel.connect(ENV["DATABASE_URL"] || "mysql://hcatlin:mohawk1982@txtgasm.cfwpo8uqtuve.us-east-1.rds.amazonaws.com/hamptoncatlin")
 
 require File.join(File.dirname(__FILE__), 'models/post')
 require File.join(File.dirname(__FILE__), 'models/comment')
