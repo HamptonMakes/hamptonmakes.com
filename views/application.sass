@@ -1,37 +1,44 @@
+$color: desaturate(#369, 20%)
 body
+  :margin-top 25px
   :font
     :family Verdana
-    :size 10pt
-  :background url("/images/background.png")
+    :size 12pt
+  :line-height 26px
+  :background #eee
 
-#wrapper
-  :border 4px solid brown
-  :padding 10px
-  :background white
-  :width 600px
-  :margin auto
-  
+  #wrapper
+    :border 4px solid $color
+    :padding 30px 60px 60px 60px
+    :background white
+    :width 800px
+    :margin auto
+    #header
+      :width 400px
+
+  #columns
+    clear: both
+    & > div
+      width: 390px
+    #left
+      float: left
+      
+    #right
+      float: right
 h1
   margin: 0px
   padding-bottom: 10px
 
-ul#biglinks
-  height: 30px
-  margin: 0px
-  padding: 0px
-  li
-    padding: 0px
-    float: left
-    width: 100px
-    font-size: 1.7em
-    list-style: none
-    margin-left: 3px
+#nav
+  font-size: 1.1em
+  span
+    padding-right: 6px
 
 #footer
   margin-top: 20px
     
 a, a:hover, a:visited
-  color: brown
+  color: darken($color, 10%)
 
 .clear
   clear: both
@@ -42,25 +49,9 @@ img#me
 h2
   text-align: center
 
-.books
-  height: 130px
-  margin-left: 35px
-  .book
-    float: left
-    height: 124px
-    width: 84px
-    a
-      float: left
-      margin-top: 15px
-    h3
-      font-size: 10px
-      text-align: center
-      padding: 0px
-      margin: 0px
-  .book.highlight
-    border: 1px solid black
-    a
-      margin-top: 0px
+.book
+  float: left
+  padding-right: 25px
 
 .post
   .date
@@ -71,7 +62,7 @@ h2
   padding-bottom: 15px
   .comment
     margin-bottom: 15px
-    border: 1px solid brown
+    border: 1px solid $color
     padding: 10px
     .author
       font-weight: bold

@@ -4,6 +4,6 @@ require 'bundler'
 Bundler.setup
 Bundler.require
 
-require 'site'
+require File.join(File.dirname(__FILE__), "site")
 
 run Site

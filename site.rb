@@ -1,9 +1,9 @@
 
 DB = Sequel.connect(ENV["DATABASE_URL"] || "mysql://root@localhost/blog")
 
-require 'models/post'
-require 'models/comment'
-require 'legacy_routes'
+require File.join(File.dirname(__FILE__), 'models/post')
+require File.join(File.dirname(__FILE__), 'models/comment')
+require File.join(File.dirname(__FILE__), 'legacy_routes')
 
 class Site < Sinatra::Base
   set :static, true

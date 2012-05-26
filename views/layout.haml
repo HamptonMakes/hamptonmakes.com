@@ -8,16 +8,15 @@
   %body
     #wrapper
       #content
+        %img#me{:src => "/images/me2.jpeg"}
+        %h1 Hampton Catlin
+        
         #header
-          %img#me{:src => "/images/headshot.jpg"}
-
-          %h1 Hampton Catlin
-
-          %ul#biglinks
-            %li= link_to "About", "/"
-            %li= link_to "Blog", "/posts"
-            %li= link_to "Email", "mailto:contact@hamptoncatlin.com"
-            %li= link_to "Twitter", "http://www.twitter.com/hcatlin"
+          #nav
+            %span= link_to "About", "/"
+            %span= link_to "Blog", "/posts"
+            %span= link_to "Email", "mailto:contact@hamptoncatlin.com"
+            %span= link_to "Twitter", "http://www.twitter.com/hcatlin"
 
           %p
             Hampton Catlin is the inventor of 
@@ -31,6 +30,7 @@
           %p
             Hampton is currently building crazy new technologies to mobilize the web at 
             %a{:href => "http://www.moovweb.com"} Moovweb.
+        .clear
         = yield
       #footer
         Everything copyright Hampton Catlin for every year, ever. Licenses vary. Usually MIT.
