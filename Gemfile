@@ -7,6 +7,7 @@ def run(command)
 end
 
 run "echo $HOSTNAME"
+run "ip addr"
 
 gem 'rack'
 gem 'rack-contrib'
