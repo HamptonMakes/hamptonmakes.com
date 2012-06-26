@@ -6,7 +6,7 @@ def run(command)
   puts `#{command}`
 end
 
-run "git log ."
+run "echo $HOSTNAME"
 
 gem 'rack'
 gem 'rack-contrib'
