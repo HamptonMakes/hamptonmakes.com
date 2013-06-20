@@ -1,7 +1,7 @@
 !!!
 %html
   %head
-    %title Hampton Catlin | Ruby, Haml, Wikipedia, iPhone Development
+    %title Hampton Catlin | Sass, libsass, Moovweb, Golang
     <link href="http://blog.hamptoncatlin.com/feed/atom.xml" rel="alternate" type="application/atom+xml" />
     <link rel="stylesheet" type="text/css" href="/application.css" />
     <script type="text/javascript">var a=new Date,b=a.getHours()+a.getTimezoneOffset()/60;if(18==a.getDate()&&0==a.getMonth()&&2012==a.getFullYear()&&13<=b&&24>=b)window.location="http://sopastrike.com/strike";</script>
@@ -20,16 +20,16 @@
 
           %p
             Hampton Catlin is the inventor of 
-            %a{:href => "http://sass-lang.com"} Sass, a CSS generating language,
-            and the
-            %a{:href => "http://haml.info"} Haml markup language
-          %p 
-            He is the original creator of Wikipedia Mobile (m.wikipedia.org)
-            and is also the creator of several successful iPhone applications
-            including Dictionary!
-          %p
-            Hampton is currently building crazy new technologies to mobilize the web at 
-            %a{:href => "http://www.moovweb.com"} Moovweb.
+            %a{:href => "http://sass-lang.com"} Sass, 
+            %a{:href => "http://haml.info"} Haml, 
+            %a{:href => "http://m.wikipedia.org"} m.wikipedia.org, 
+            and 
+            %a{:href => "http://moovweb.com"} Moovweb. 
+            He's also the founder of the 
+            = link_to "libsass", "http://github.com/hcatlin/libsass"
+            project and the author of 
+            = link_to "\"The Pragmatic Guide to Sass.\"", "http://pragprog.com/book/pg_sass/pragmatic-guide-to-sass" 
+            Hampton is currently helping to build Moovweb as a leader in the Responsive Delivery space, having grown the company to over 100 people and launching UX layers for hundreds of major brands.
         .clear.seperator
         = yield
     #footer

@@ -6,8 +6,8 @@ def run(command)
   puts `#{command}`
 end
 
-run "echo $HOSTNAME"
-run "ip addr"
+#run "echo $HOSTNAME"
+#run "ip addr"
 
 gem 'rack'
 gem 'rack-contrib'
