@@ -169,6 +169,9 @@ a:visited { color: #a0a; }
 /*
 /*****************************************************************************/
 
+.section {
+  margin: 2em auto;
+}
 
 .avatar {
   height: 175px;
@@ -182,7 +185,51 @@ a:visited { color: #a0a; }
   background-size: 100% 100%;
   margin-top: 4em;
   margin-bottom: 4em;
+}
 
+
+.name h1 {
+  color: #88063d;
+  font-size: 46px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.name h2 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #C77368;
+}
+
+.social {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.links{
+  height: 60px;
+  text-align: justify;
+  min-width: 150px;
+  margin: 0 auto;
+}
+
+.links div {
+  width: 150px;
+  height: 60px;
+  display: inline-block;
+  background: red;
+}
+
+.links:after{
+  content: '';
+  width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+  display: inline-block;
+}
+
+.social a {
+  color: #ccc;
+  opacity: 0.8;
+  font-size: 44px;
 }
 
 .about p{
@@ -192,11 +239,11 @@ a:visited { color: #a0a; }
 }
 
 .about a {
-  color: #e32862;
+  color: #E02252;
   text-decoration: none;
 }
 
 .about a:hover{
   color: #c21d50;
-  border-bottom: 1px dotted #c21d50; 
+  border-bottom: 1px dotted #8f1433; 
 }
