@@ -13,7 +13,7 @@
 html, body { height: 100%; }
 
 body {
-  background-color: #FFF;
+  background-color: #fcfcfc;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: small;
   text-align: center;
@@ -232,6 +232,11 @@ a:visited { color: #a0a; }
   font-size: 44px;
 }
 
+.social a:hover{
+  color: #e0dcb8;
+  transition: 0.8s ease;
+}
+
 .about p{
   font-size: 18px;
   width: 500px;
@@ -326,4 +331,42 @@ a:visited { color: #a0a; }
        }
     }
 
+}
+
+.postpress {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.postpress li {
+  list-style-type: none;
+}
+
+.press {
+  width: 300px;
+  float:left;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.post {
+  width: 300px;
+  float: right;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.book {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.book-pic img {
+  float: left;
+  height: 228px;
+  width: 152px;
+}
+
+.footer {
+  text-align: center
 }
