@@ -170,7 +170,8 @@ a:visited { color: #a0a; }
 /*****************************************************************************/
 
 .section {
-  margin: 2em auto;
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
 }
 
 .avatar {
@@ -233,7 +234,7 @@ a:visited { color: #a0a; }
 }
 
 .social a:hover{
-  color: #e0dcb8;
+  color: #f6eca2;
   transition: 0.8s ease;
 }
 
@@ -244,13 +245,13 @@ a:visited { color: #a0a; }
 }
 
 .about a {
-  color: #E02252;
+  color: #C77368;
   text-decoration: none;
 }
 
 .about a:hover{
-  color: #c21d50;
-  border-bottom: 1px dotted #8f1433; 
+  color: #eb5642;
+  border-bottom: 1px dotted #eb5642; 
 
 }
 
@@ -340,6 +341,7 @@ a:visited { color: #a0a; }
 
 .postpress li {
   list-style-type: none;
+    padding-top: 7px;
 }
 
 .press {
@@ -347,6 +349,25 @@ a:visited { color: #a0a; }
   float:left;
   margin: 0 auto;
   text-align: left;
+}
+
+.postpress h2 {
+  font-size: 26px;
+}
+
+.postpress em {
+  float: right;
+}
+
+.postpress li a {
+  color: #C77368;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.postpress li a:hover {
+  color: #eb5642;
+  border-bottom: 1px dotted #eb5642; 
 }
 
 .post {
@@ -361,12 +382,42 @@ a:visited { color: #a0a; }
   margin: 0 auto;
 }
 
+.book p {
+  font-size: 16px;
+  text-align: left;
+}
+
+.book a {
+  color: #C77368;
+  text-decoration: none;
+}
+
+.book a:hover {
+  color: #eb5642;
+  border-bottom: 1px dotted #eb5642;
+}
+
 .book-pic img {
   float: left;
   height: 228px;
   width: 152px;
+  box-shadow: 0 0 15px rgba(0,0,0,.5);
 }
 
 .footer {
-  text-align: center
+  text-align: center;
+}
+
+.footer p {
+  color: #ccc;
+}
+
+.footer em {
+  color: #999;
+  font-style: normal;
+}
+
+.footer em:hover {
+  color: #C77368;
+  transition: 0.8s ease;
 }
