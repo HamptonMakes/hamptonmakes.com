@@ -1,8 +1,11 @@
+
 #columns
   #left
     %h3 Projects
 
     %ul
+      %li
+        = link_to "wordset", "https://www.wordset.org"
       %li
         = link_to "libsass", "http://github.com/hcatlin/libsass"
         (C/C++ Port of Sass)
@@ -10,73 +13,49 @@
         = link_to "SassC", "http://github.com/hcatlin/sassc"
         (Command Line Wrapper for libsass)
       %li
-        = link_to "Wikipedia's Mobile Site", "http://m.wikipedia.org"
-        == (#{link_to "code", "http://github.com/hcatlin/wikimedia-mobile/"}, #{link_to "info", "http://wikitech.wikimedia.org/view/Mobile"})
-      %li
         = link_to "Dictionary! iPhone App", "http://itunes.apple.com/WebObjects/MZStore.woa/wa/viewSoftware?id=293283136&mt=8"
         == (#{link_to "contact", "mailto:dictionary@hamptoncatlin.com"})
       %li
         = link_to "Haml", "http://haml-lang.com"
         and
         = link_to "Sass", "http://sass-lang.com"
-      %li= link_to "make_resourceful (for Rails)", "https://github.com/hcatlin/make_resourceful/tree"
-      %li
-        = link_to "Rails Boost", "http://www.railsboost.com"
-        == (#{link_to "code", "http://github.com/hcatlin/railsboost/tree"})
+      %li= link_to "make_resourceful (for Rails)", "https://github.com/hcatlin/make_resourceful"
       %li= link_to "Learn Pi", "http://pi.hamptoncatlin.com"
-      %li= link_to "Jordan, Jesse, Go! Fansite", "http://www.jjgo.org"
   #right
-    %h3 In The Press
-
-    %ul
-      %li
-        = link_to "Hampton on Sass", "http://www.netmagazine.com/interviews/hampton-catlin-building-sass"
-        %em (.Net Magazine)
-      %li
-        = link_to "Episode 070: Hampton Catlin", "http://shoptalkshow.com/episodes/070-with-hampton-catlin/"
-        %em (ShopTalk Podcast)
-      %li
-        = link_to "Cloud Computing and Ruby: Interviewing Hampton Catlin", "http://ruby.about.com/od/reviewsevents/p/hcatlin2.htm"
-        %em (About.com)
-      %li
-        = link_to "iPhone App Review - Dictionary!", "http://appshouter.com/iphone-app-review/iphone-app-review-%E2%80%93-dictionary/"
-        %em (Appshouter.com)
-      %li
-        = link_to "Podcast - Episode 1 - Hampton Catlin", "http://www.mobileorchard.com/podcast-interview-with-hampton-catlin/"
-        %em (MobileOrchard.com)
-      %li
-        = link_to "Rails Podcast: Hampton Catlin", "http://podcast.rubyonrails.org/programs/1/episodes/hampton_catlin"
-        %em (podcast.rubyonrails.org)
+    %h2 Podcasts
+    Also, checkout the podcast I do. It's called
+    = link_to "We Have a Microphone", "http://www.wehaveamicrophone.com"
+    and it's a fun, nerdy romp with a few cocktails involved.
 
 .clear
 %h2 Books
+
+%p
+  My most recent book is
+  %a{href: "http://www.responsivewebdesignforteams.com/"} Responsive Web Design For Teams
+  which is about how company teams can work together, using Sass, to build awesome
+  responsive sites. It's a collaboration between myself and my husband, Michael Catlin.
 
 %a{href: "http://pragprog.com/book/pg_sass/pragmatic-guide-to-sass"}
   %img.book{src: "http://imagery.pragprog.com/products/272/pg_sass_xlargecover.jpg"}
 
 %p
-  My most recent book is a collaboration between my husband and myself
-  and is a handy read called 
+  We also co-wrote
   %a{href: "http://pragprog.com/book/pg_sass/pragmatic-guide-to-sass"} Pragmatic Guide to Sass
   \. I was super honored to get to A) write a book with my husband,
   B) write about a technology I invented, and C) got to get published by
   my favorite publishing house! What an honor!
-%p 
+%p
   My first book was co-authored primarily with Jeff Hardy and was called
   %a{href: "http://www.amazon.com/gp/product/1590596862?ie=UTF8&tag=justasloud-20&linkCode=as2&camp=1789&creative=390957&creativeASIN=1590596862"} "Beginning Rails: From Novice to Professional"
   , but I haven't been involved with later editions. And truth be told,
   officially I was only a contributing author (who just worked a lot).
-  
+
 .clear
 
 %h2 Contact
 
 %p
-  Please email me at 
+  Please email me at
   %a{:href => "mailto:contact@hamptoncatlin.com"} contact@hamptoncatlin.com
   for most queries.
-
-%p 
-  You can also contact me at 
-  %a{:href => "mailto:hcatlin@moovweb.com"} hcatlin@moovweb.com
-  for Moovweb related questions.
