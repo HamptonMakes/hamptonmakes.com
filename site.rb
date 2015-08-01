@@ -1,5 +1,5 @@
 
-DB = Sequel.connect(ENV["DATABASE_URL"] || "mysql://hcatlin:mohawk1982@txtgasm.cfwpo8uqtuve.us-east-1.rds.amazonaws.com/hamptoncatlin")
+DB = Sequel.connect(ENV["DATABASE_URL"] || "")
 
 require File.join(File.dirname(__FILE__), 'models/post')
 require File.join(File.dirname(__FILE__), 'models/comment')
@@ -9,20 +9,20 @@ class Site < Sinatra::Base
   set :static, true
   set :public, File.join(File.dirname(__FILE__), "public")
   include LegacyRoutes
-  
+
   helpers do
     def link_to(name, url)
       "<a href='#{url}'>#{name}</a>"
     end
-    
+
     def date(date)
       date.strftime("%b %e, %Y")
     end
   end
-  
-  
+
+
   # THE REAL SITE
-  
+
   get '/' do
     haml :index
   end
@@ -31,22 +31,22 @@ class Site < Sinatra::Base
     @post = Post.filter(:permalink => params[:permalink]).first
     haml :post
   end
-  
+
   get '/application.css' do
     sass :application
   end
-  
+
   get '/posts' do
     load_posts
     haml :posts
   end
-  
+
   def load_posts
     offset = params[:offset] || 0
     limit  = params[:limit]  || 50
     @posts = Post.order(:created_at).filter(:user_id => 1).reverse.limit(limit, offset)
   end
-  
+
   get '/feed/atom.xml' do
     load_posts
     builder do |xml|
@@ -73,7 +73,7 @@ class Site < Sinatra::Base
       end
     end
   end
-  
+
   get '*' do
     permalink = request.path.split("/").last
     redirect "http://www.hamptoncatlin.com/posts/#{permalink}"
