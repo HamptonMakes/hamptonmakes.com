@@ -1,4 +1,3 @@
 
 
-gem install middleman
-middleman build
+bundle exec middleman build
