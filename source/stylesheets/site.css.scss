@@ -47,3 +47,29 @@ a {
     }
   }
 }
+
+.bookshelf {
+  max-width: 505px;
+  text-align: left;
+  margin: 8px;
+
+  .book {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-top: 20px;
+
+    .img {
+      width: 150px;
+      margin-top: 20px;
+      img {
+        max-width: 150px;
+      }
+    }
+    .txt {
+      margin-left: 10px;
+      max-width: 300px;
+    }
+  }
+}
