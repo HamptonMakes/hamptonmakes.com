@@ -9,12 +9,14 @@ GEM
     addressable (2.8.6)
       public_suffix (>= 2.0.2, < 6.0)
     backports (3.25.0)
+    bigdecimal (3.1.6)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.2.3)
     contracts (0.16.1)
+    csv (3.2.8)
     dotenv (3.1.0)
     erubis (2.7.0)
     execjs (2.9.1)
@@ -69,6 +71,8 @@ GEM
       toml
       uglifier (~> 3.0)
       webrick
+    middleman-gh-pages (0.4.1)
+      rake (> 0.9.3)
     minitest (5.22.2)
     padrino-helpers (0.15.3)
       i18n (>= 0.6.7, < 2)
@@ -79,6 +83,7 @@ GEM
     parslet (2.0.0)
     public_suffix (5.0.4)
     rack (2.2.8.1)
+    rake (13.1.0)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -102,7 +107,10 @@ PLATFORMS
   arm64-darwin-23
 
 DEPENDENCIES
+  bigdecimal
+  csv
   middleman (~> 4.5)
+  middleman-gh-pages
   tzinfo-data
   wdm (~> 0.1)
 
