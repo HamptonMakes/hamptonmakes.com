@@ -2,6 +2,7 @@ body {
   background-color: #fbc547;
   color: #333;
   height: 100%;
+  margin: 0;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   text-align: center;
@@ -15,7 +16,7 @@ a {
     color: rgba(0, 0, 0, 0.6); }
 
 .stack {
-  max-width: 300px; }
+  max-width: 375px; }
   .stack .byline {
     font-style: italic;
     margin-bottom: 10px; }
