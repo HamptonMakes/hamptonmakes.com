@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '3.3.0'
 
 gem 'middleman', '~> 4.5'
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
