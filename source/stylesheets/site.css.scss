@@ -2,6 +2,7 @@ body {
   background-color: #fbc547;
   color: #333;
   height: 100%;
+  margin: 0;
   width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
     "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
@@ -23,7 +24,7 @@ a {
 }
 
 .stack {
-  max-width: 300px;
+  max-width: 375px;
 
   .byline {
     font-style: italic;
