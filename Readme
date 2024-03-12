@@ -1,0 +1,8 @@
+
+
+
+Deploy with...
+rake publish
+
+Run local server via
+`middleman`
