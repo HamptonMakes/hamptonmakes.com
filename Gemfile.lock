@@ -18,7 +18,11 @@ GEM
     contracts (0.16.1)
     csv (3.2.8)
     dotenv (3.1.0)
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0)
     erubis (2.7.0)
+    eventmachine (1.2.7)
     execjs (2.9.1)
     fast_blank (1.0.1)
     fastimage (2.3.0)
@@ -30,6 +34,7 @@ GEM
     hamster (3.0.0)
       concurrent-ruby (~> 1.0)
     hashie (3.6.0)
+    http_parser.rb (0.8.0)
     i18n (1.6.0)
       concurrent-ruby (~> 1.0)
     kramdown (2.4.0)
@@ -73,6 +78,10 @@ GEM
       webrick
     middleman-gh-pages (0.4.1)
       rake (> 0.9.3)
+    middleman-livereload (3.4.7)
+      em-websocket (~> 0.5.1)
+      middleman-core (>= 3.3)
+      rack-livereload (~> 0.3.15)
     minitest (5.22.2)
     padrino-helpers (0.15.3)
       i18n (>= 0.6.7, < 2)
@@ -83,6 +92,8 @@ GEM
     parslet (2.0.0)
     public_suffix (5.0.4)
     rack (2.2.8.1)
+    rack-livereload (0.3.17)
+      rack
     rake (13.1.0)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
@@ -111,6 +122,7 @@ DEPENDENCIES
   csv
   middleman (~> 4.5)
   middleman-gh-pages
+  middleman-livereload
   tzinfo-data
   wdm (~> 0.1)
 
