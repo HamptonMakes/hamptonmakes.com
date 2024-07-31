@@ -47,3 +47,9 @@ a {
     .bookshelf .book .txt {
       margin-left: 10px;
       max-width: 300px; }
+
+.policies {
+  font-family: "Times New Roman" , Times, serif;
+  max-width: 500px; }
+  .policies p {
+    text-align: left; }
