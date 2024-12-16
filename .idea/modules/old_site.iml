@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="RUBY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$/../../old_site">
+      <sourceFolder url="file://$MODULE_DIR$/../../old_site/features" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../old_site/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/../../old_site/test" isTestSource="true" />
+    </content>
+    <orderEntry type="jdk" jdkName="RVM: ruby-3.3.4" jdkType="RUBY_SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v2.5.23, RVM: ruby-3.3.4) [gem]" level="application" />
+  </component>
+  <component name="RubyModuleProperties">
+    <option name="autoCreated" value="true" />
+  </component>
+</module>
