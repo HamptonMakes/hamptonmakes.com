@@ -4,52 +4,81 @@ body {
   height: 100%;
   margin: 0;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
+    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
+    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
+    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+}
 
 a {
-  color: rgba(0, 0, 0, 0.7); }
-  a:focus, a:hover {
-    color: rgba(0, 0, 0, 0.6); }
+  color: rgba(#000, 0.7);
+
+  &:focus,
+  &:hover {
+    color: rgba(#000, 0.6);
+  }
+}
 
 .stack {
-  max-width: 375px; }
-  .stack .byline {
+  max-width: 375px;
+
+  .byline {
     font-style: italic;
-    margin-bottom: 10px; }
-  .stack .portrait img {
-    width: 100%; }
-  .stack .links a {
-    border: 0;
-    text-decoration: none; }
-  .stack .links svg {
-    width: 64px;
-    height: 64px; }
+    margin-bottom: 10px;
+  }
+  .portrait {
+    img {
+      width: 100%;
+    }
+  }
+
+  .links {
+    a {
+      border: 0;
+      text-decoration: none;
+    }
+    svg {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}
 
 .bookshelf {
   max-width: 505px;
   text-align: left;
-  margin: 8px; }
-  .bookshelf .book {
+  margin: 8px;
+
+  .book {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    margin-top: 20px; }
-    .bookshelf .book .img {
+    margin-top: 20px;
+
+    .img {
       width: 150px;
-      margin-top: 20px; }
-      .bookshelf .book .img img {
-        max-width: 150px; }
-    .bookshelf .book .txt {
+      margin-top: 20px;
+      img {
+        max-width: 150px;
+      }
+    }
+    .txt {
       margin-left: 10px;
-      max-width: 300px; }
+      max-width: 300px;
+    }
+  }
+}
 
 .policies {
   font-family: "Times New Roman" , Times, serif;
-  max-width: 500px; }
-  .policies p {
-    text-align: left; }
+  max-width: 500px;
+
+  p {
+    text-align: left;
+  }
+}
