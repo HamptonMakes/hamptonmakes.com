@@ -1,0 +1,13 @@
+
+* Love letter to the young adult web
+* Add to Book recommendations
+* Simple Code is Good Code
+* Caching Is Better than you Think
+* You don't need Sass anymore
+* The Web is a Mess
+* You don't need React anymore
+* Leadership for Developers
+* We need to talk about the web
+* Quickly build a static website
+* Enshittification of the web
+* We Need to Save The Web
