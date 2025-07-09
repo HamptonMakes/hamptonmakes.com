@@ -30,6 +30,10 @@ a {
 .stack {
   max-width: 375px;
 
+  > * {
+    padding: 10px;
+  }
+
   .byline {
     font-style: italic;
     margin-bottom: 10px;
