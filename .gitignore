@@ -1,5 +1,6 @@
 .bundle
 .cache
-.DS_Store
+**/.DS_Store
 .sass-cache
 build/
+.DS_Store
