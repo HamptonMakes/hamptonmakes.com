@@ -15,11 +15,15 @@ body {
 }
 
 a {
-  color: rgba(#000, 0.7);
+  color: #000;
 
   &:focus,
   &:hover {
-    color: rgba(#000, 0.6);
+    color: #000;
+  }
+
+  &:visited {
+    color: #000;
   }
 }
 
