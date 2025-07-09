@@ -82,6 +82,7 @@
         %h2= section + " Books"
 
         - books.each do |book|
+          %a{name: book.image.split(".").first}
           .book
             .img
               %img{src: "images/books/#{book.image}"}
