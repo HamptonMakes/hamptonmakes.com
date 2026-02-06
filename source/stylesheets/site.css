@@ -272,6 +272,14 @@ body.index .page {
     width: 100%;
     border-radius: 12px;
   }
+
+  .pride-flag {
+    display: inline-block;
+    width: 20px;
+    height: 14px;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
 }
 
 .stack-right {
