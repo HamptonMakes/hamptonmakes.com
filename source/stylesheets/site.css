@@ -359,6 +359,41 @@ body.index .page {
   line-height: 1.5;
 }
 
+/* Author bio */
+.bio {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bio-photo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.bio-text {
+  text-align: left;
+}
+
+.bio-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.bio-text p {
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  font-weight: 350;
+  opacity: 0.75;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   :root {
