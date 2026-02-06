@@ -6,6 +6,27 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "Hampton Lintorn-Catlin" %></title>
+    <%
+      og_title = current_page.data.title || "Hampton Lintorn-Catlin"
+      og_description = current_page.data.description || "Hampton Lintorn-Catlin — Technical leader, computer wrangler."
+      og_image = "https://hamptonmakes.com/images/Hampton.jpg"
+      og_url = "https://hamptonmakes.com#{current_page.url}"
+      og_type = defined?(current_article) ? "article" : "website"
+    %>
+    <meta name="description" content="<%= og_description %>">
+    <meta property="og:title" content="<%= og_title %>">
+    <meta property="og:description" content="<%= og_description %>">
+    <meta property="og:image" content="<%= og_image %>">
+    <meta property="og:url" content="<%= og_url %>">
+    <meta property="og:type" content="<%= og_type %>">
+    <meta property="og:site_name" content="Hampton Lintorn-Catlin">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= og_title %>">
+    <meta name="twitter:description" content="<%= og_description %>">
+    <meta name="twitter:image" content="<%= og_image %>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <%= stylesheet_link_tag "site" %>
     <%= javascript_include_tag "site" %>
     <!-- Default Statcounter code for Hampton Makes https://hamptonmakes.com -->
@@ -37,7 +58,17 @@
     </script>
 <!-- End Matomo Code -->
   </head>
-  <body>
-    <%= yield %>
+  <body class="<%= page_classes %>">
+    <header class="site-header">
+      <nav class="site-nav">
+        <a class="brand" href="/">Hampton</a>
+        <a href="/blog/">Blog</a>
+        <a href="/bookshelf.html">Bookshelf</a>
+      </nav>
+    </header>
+
+    <main class="page">
+      <%= yield %>
+    </main>
   </body>
 </html>

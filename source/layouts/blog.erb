@@ -1,0 +1,21 @@
+<% wrap_layout :layout do %>
+  <article class="blog-article">
+    <header class="blog-article-header">
+      <h1><%= current_article.title %></h1>
+      <% if current_article.data.subtitle %>
+        <p class="blog-article-subtitle"><%= current_article.data.subtitle %></p>
+      <% end %>
+      <p class="blog-article-meta">
+        <span class="blog-article-author">Hampton Lintorn-Catlin</span>
+        <span class="blog-article-sep">&middot;</span>
+        <time datetime="<%= current_article.date.strftime('%Y-%m-%d') %>">
+          <%= current_article.date.strftime('%B %-d, %Y') %>
+        </time>
+      </p>
+    </header>
+
+    <div class="blog-article-body">
+      <%= yield %>
+    </div>
+  </article>
+<% end %>

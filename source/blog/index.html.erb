@@ -1,0 +1,18 @@
+---
+title: Blog
+---
+
+<section class="blog-index">
+  <h1>Blog</h1>
+
+  <ul class="blog-index-list">
+    <% blog.articles.each do |article| %>
+      <li class="blog-index-item">
+        <a class="blog-index-link" href="<%= article.url %>">
+          <span class="blog-index-title"><%= article.title %></span>
+          <span class="blog-index-date"><%= article.date.strftime("%B %-d, %Y") %></span>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</section>

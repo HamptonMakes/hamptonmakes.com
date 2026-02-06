@@ -42,4 +42,15 @@ page '/*.txt', layout: false
 #   activate :minify_javascript
 # end
 
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.permalink = "{year}/{month}/{day}/{title}.html"
+  blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.layout = "blog"
+  blog.default_extension = ".md"
+end
+
+set :markdown_engine, :kramdown
+set :markdown, input: "GFM", hard_wrap: false
+
 activate :livereload
