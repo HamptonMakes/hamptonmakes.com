@@ -10,8 +10,13 @@
       is_article = current_article ? true : false
       og_title = current_page.data.title || "Hampton Lintorn-Catlin"
       og_description = current_page.data.description || "Hampton Lintorn-Catlin — Technical leader, computer wrangler."
-      og_image = "https://hamptonmakes.com/images/social-card.png"
-      og_image_alt = "Hampton Lintorn-Catlin — Maker, Principal Engineer at Square, inventor of Sass and Haml"
+      og_image =
+        if is_article
+          "https://hamptonmakes.com/images/social/#{current_article.slug}.png"
+        else
+          "https://hamptonmakes.com/images/social-card.png"
+        end
+      og_image_alt = is_article ? "#{og_title} — #{og_description}" : "Hampton Lintorn-Catlin — Maker, Principal Engineer at Square, inventor of Sass and Haml"
       og_url = "https://hamptonmakes.com#{current_page.url}"
       og_type = is_article ? "article" : "website"
     %>
