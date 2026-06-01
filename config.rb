@@ -54,10 +54,3 @@ set :markdown_engine, :kramdown
 set :markdown, input: "GFM", hard_wrap: false
 
 activate :livereload
-
-# Auto-generate per-article social-share cards (1200x630) so LinkedIn etc.
-# show the article title + description on the image itself.
-require_relative 'lib/social_cards'
-ready do
-  SocialCards.generate_all
-end
