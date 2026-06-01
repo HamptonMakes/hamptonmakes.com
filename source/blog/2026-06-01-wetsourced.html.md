@@ -1,7 +1,7 @@
 ---
 title: "Wetsourced Manifesto"
 date: 2026-06-01
-description: "Please label your blog posts and content with wetsourced so I can know if I'm going to get a unique human idea — or a digital facsimile of a human idea worked through a giant weighted pattern matching probability model."
+description: "Given the rise of AI-created content, human authors should proudly indicate their content was wetsourced."
 ---
 
 It's more important than ever that humans take the time to actually write and communicate directly themselves. This content, I dub, Wetsourced.
