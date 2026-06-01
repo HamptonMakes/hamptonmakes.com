@@ -7,23 +7,34 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title><%= current_page.data.title || "Hampton Lintorn-Catlin" %></title>
     <%
+      is_article = current_article ? true : false
       og_title = current_page.data.title || "Hampton Lintorn-Catlin"
       og_description = current_page.data.description || "Hampton Lintorn-Catlin — Technical leader, computer wrangler."
-      og_image = "https://hamptonmakes.com/images/hampton.jpg"
+      og_image = "https://hamptonmakes.com/images/social-card.png"
+      og_image_alt = "Hampton Lintorn-Catlin — Maker, Principal Engineer at Square, inventor of Sass and Haml"
       og_url = "https://hamptonmakes.com#{current_page.url}"
-      og_type = defined?(current_article) ? "article" : "website"
+      og_type = is_article ? "article" : "website"
     %>
     <meta name="description" content="<%= og_description %>">
     <meta property="og:title" content="<%= og_title %>">
     <meta property="og:description" content="<%= og_description %>">
     <meta property="og:image" content="<%= og_image %>">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="<%= og_image_alt %>">
     <meta property="og:url" content="<%= og_url %>">
     <meta property="og:type" content="<%= og_type %>">
     <meta property="og:site_name" content="Hampton Lintorn-Catlin">
+    <meta property="og:locale" content="en_US">
+    <% if is_article %>
+      <meta property="article:author" content="Hampton Lintorn-Catlin">
+      <meta property="article:published_time" content="<%= current_article.date.iso8601 %>">
+    <% end %>
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<%= og_title %>">
     <meta name="twitter:description" content="<%= og_description %>">
     <meta name="twitter:image" content="<%= og_image %>">
+    <meta name="twitter:image:alt" content="<%= og_image_alt %>">
     <link rel="icon" type="image/svg+xml" href="/images/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
