@@ -191,21 +191,22 @@ body.index .page {
     gap: 14px;
     text-align: left;
     padding: 12px 16px;
-    border: 2px solid var(--eb-border);
-    border-radius: 0;
+    border: 1px solid rgba(26, 20, 16, 0.18);
+    border-radius: 10px;
     background: #fffaee;
-    box-shadow: 3px 3px 0 var(--eb-border);
-    transition: transform 0.08s ease, box-shadow 0.08s ease;
+    box-shadow: 0 1px 0 rgba(26, 20, 16, 0.08);
+    transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
     text-decoration: none;
 
     &:hover {
-      transform: translate(-1px, -1px);
-      box-shadow: 4px 4px 0 var(--eb-border);
+      transform: translateY(-1px);
+      border-color: rgba(26, 20, 16, 0.35);
+      box-shadow: 0 3px 0 rgba(26, 20, 16, 0.12);
     }
 
     &:active {
-      transform: translate(2px, 2px);
-      box-shadow: 1px 1px 0 var(--eb-border);
+      transform: translateY(1px);
+      box-shadow: 0 0 0 rgba(26, 20, 16, 0.12);
     }
   }
 
@@ -214,8 +215,8 @@ body.index .page {
     height: 40px;
     object-fit: contain;
     flex-shrink: 0;
-    border: 2px solid var(--eb-border);
-    border-radius: 0;
+    border: 1px solid rgba(26, 20, 16, 0.15);
+    border-radius: 8px;
     background: #fff;
     padding: 4px;
     image-rendering: pixelated;
