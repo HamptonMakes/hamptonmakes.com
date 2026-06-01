@@ -55,9 +55,9 @@ a {
 .site-header {
   position: sticky;
   top: 0;
-  background: rgba(251, 197, 71, 0.92);
-  backdrop-filter: blur(6px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--brand-yellow);
+  border-bottom: 3px solid var(--eb-border);
+  box-shadow: 0 4px 0 var(--eb-border);
   z-index: 10;
 }
 
@@ -627,9 +627,9 @@ body.index .page {
   z-index: 10;
   text-align: center;
   padding: 12px 16px;
-  background: rgba(251, 197, 71, 0.92);
-  backdrop-filter: blur(6px);
-  border-top: 2px solid var(--eb-border);
+  background: var(--brand-yellow);
+  border-top: 3px solid var(--eb-border);
+  box-shadow: 0 -4px 0 var(--eb-border);
 }
 
 .footer-links {
